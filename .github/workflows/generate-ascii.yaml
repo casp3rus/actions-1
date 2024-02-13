@@ -27,6 +27,9 @@ jobs:
               with:
                 name: dragon-text-file
 
+            - name: List files
+              run: ls
+
             - name: Test file exists
               run: grep -i "dragon" dragon.txt
     
@@ -39,6 +42,9 @@ jobs:
               with:
                 name: dragon-text-file
 
+            - name: List files
+              run: ls
+              
             - name: Read file
               run: cat dragon.txt
 
